@@ -1,0 +1,47 @@
+header {
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  .header__burger__icon {
+    div {
+      width: 20px;
+      height: 2px;
+      background-color: black;
+      margin: 4px;
+    }
+  }
+
+  .header__div {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+    margin-left: 24px;
+    button {
+      padding: 12px;
+      margin-right: 14px;
+      background: #ffffff;
+      box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+      border: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    div {
+      font-size: 13px;
+    }
+  }
+
+  .header__images__div {
+    display: flex;
+    img {
+      height: 20px;
+      width: 20px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.video__div {
+}

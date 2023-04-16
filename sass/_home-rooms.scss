@@ -1,0 +1,122 @@
+.rooms__div {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin-top: 50px;
+
+  .rooms__icon-ultimate {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    max-width: 200px;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      padding: 6%;
+      background-color: white;
+      margin-bottom: 50px;
+    }
+  }
+  .slider__prev,
+  .slider__next {
+    position: absolute;
+    top: 62%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .slider__prev {
+    left: 7%;
+  }
+
+  .slider__next {
+    right: 7%;
+  }
+
+  .slider__container {
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -25px; /* Adjust this value based on the desired distance from the slider */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 100px;
+    padding-top: 50px;
+  }
+
+  h5 {
+    text-align: center;
+    margin-top: 60px;
+    color: #777;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 45px;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .rooms__icon {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    max-width: 200px;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      padding: 6%;
+      background-color: white;
+      margin-bottom: 50px;
+    }
+  }
+
+  .slider__rooms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+
+    img {
+      margin: auto;
+      z-index: 0;
+      width: 70%;
+      max-width: 500px;
+      min-width: 250px;
+    }
+  }
+}

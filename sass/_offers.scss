@@ -1,0 +1,94 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  position: relative;
+
+  .rooms_page-booking {
+    margin-top: 0px;
+    width: 100%;
+    max-width: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  h6 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #bdac8d;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+
+  .slider__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+
+    h3 {
+      margin-top: 20px;
+    }
+
+    div {
+      width: 100%;
+      img {
+        margin: auto;
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+.related__popular-white {
+  background-color: white;
+  .slider__rooms {
+    .duplex__room {
+      h4 {
+        font-size: 16px;
+        span {
+          color: #bdbdbd;
+          font-size: 16px;
+        }
+      }
+    }
+    .wide__icons {
+      position: relative;
+      .rooms__icon-popular {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 300px;
+        left: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 96%;
+        img {
+          width: 40px;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}

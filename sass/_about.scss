@@ -1,0 +1,121 @@
+.about__video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  video {
+    width: 60%;
+    max-width: 500px;
+    min-width: 280px;
+    align-self: center;
+    margin-top: 30px;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.16px;
+    color: #222222;
+    margin: 20px 20px;
+  }
+}
+
+.offerings {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; /* add margin to the container */
+  margin-top: 40px;
+
+  // .off__golden {
+  //   background: #bead8e;
+  //   color: white;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   width: 80%;
+  //   text-align: center;
+  //   padding: 10px;
+  // }
+
+  div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* center the items vertically */
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    background-color: white;
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    h6 {
+      margin: 0;
+    }
+  }
+}
+
+.restaurant {
+  padding: 20px;
+  background: #ffffff;
+  margin-bottom: -120px;
+
+  .square {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    img {
+      margin: 20px auto;
+      width: 50%;
+      max-width: 400px;
+    }
+  }
+
+  h6 {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+  }
+
+  h1 {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -1.05px;
+    color: #222222;
+  }
+
+  p {
+    margin-left: 20px;
+    margin-right: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+  }
+
+  button {
+    margin-top: 46.8px;
+    margin-left: 20px;
+    color: white;
+    background: #bead8e;
+    border: none;
+    padding: 21px 56px;
+    letter-spacing: 3px;
+    margin-bottom: 36px;
+    margin-bottom: 175px;
+  }
+}

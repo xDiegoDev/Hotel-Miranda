@@ -1,0 +1,83 @@
+.discovery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .gray1 {
+    width: 270px;
+    margin: auto;
+    margin-top: -100px;
+    margin-bottom: 40px;
+  }
+
+  .team__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 270px;
+  }
+
+  .team__image {
+    width: 150px;
+    margin: auto;
+    margin-bottom: -10px;
+    margin-left: 41%;
+    background-color: #ffffff;
+  }
+
+  h4 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 21px;
+  }
+
+  p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0px 50px;
+    margin-bottom: 40px;
+  }
+
+  .gray2 {
+    width: 270px;
+    margin: auto;
+    margin-bottom: 0px;
+  }
+
+  .discovery__luxury {
+    background-color: #222222;
+    width: 270px;
+    margin: auto;
+
+    img {
+      width: 50px;
+      margin-top: 50px;
+      margin-left: 40%;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 30px;
+      color: white;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      margin: 10px 50px;
+      margin-bottom: 40px;
+      color: white;
+    }
+  }
+}

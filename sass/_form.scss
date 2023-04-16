@@ -1,0 +1,31 @@
+form {
+  background-color: #222222;
+  color: white;
+  padding-top: 38px;
+
+  label {
+    margin-left: 20px;
+  }
+  img {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #bead8e;
+    margin-left: -20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  button {
+    margin-left: 20px;
+    color: white;
+    background: #bead8e;
+    border: none;
+    padding: 21px 28px;
+    letter-spacing: 2px;
+    margin-bottom: 36px;
+  }
+}

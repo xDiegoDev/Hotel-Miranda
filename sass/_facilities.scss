@@ -1,0 +1,139 @@
+.facilities__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 90px;
+  h6 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    color: #222222;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  img {
+    margin: 30px auto;
+    width: 70%;
+    max-width: 350px;
+  }
+
+  h4 {
+    text-align: left;
+    margin-left: 35px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+    color: #222222;
+  }
+
+  p {
+    text-align: left;
+    margin-left: 35px;
+    margin-right: 70px;
+    font-style: normal;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+  }
+}
+
+.facilities__slider-black {
+  background-color: #222222;
+  padding: 20px;
+  padding-bottom: 60px;
+  color: white;
+
+  h6 {
+    color: white;
+  }
+  h1 {
+    color: white;
+    margin-bottom: 25px;
+  }
+  div {
+    background-color: #292929;
+    padding-bottom: 30px;
+    text-align: center;
+    img {
+      text-align: center;
+    }
+    h4 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+}
+
+.counter {
+  text-align: center;
+  width: 100%;
+
+  .slider__container {
+    width: 100%;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    .square {
+      width: 40%;
+      max-width: 400px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row; /* set the inner divs as row flex */
+      margin-top: 30px;
+      align-items: center;
+      width: 80%;
+      max-width: 400px;
+      margin-bottom: 50px;
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.counter__prev {
+  .slider__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+    .wide__slider {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}

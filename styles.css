@@ -1,4 +1,7 @@
-header {
+body {
+  position: relative;
+}
+body header {
   background: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   display: flex;
@@ -6,19 +9,22 @@ header {
   align-items: center;
   padding: 20px;
 }
-header .header__burger__icon div {
+body header .header__burger__icon div {
   width: 20px;
   height: 2px;
   background-color: black;
   margin: 4px;
 }
-header .header__div {
+body header .header__nav {
+  display: none;
+}
+body header .header__div {
   display: flex;
   align-items: center;
   margin-right: 45px;
   margin-left: 24px;
 }
-header .header__div button {
+body header .header__div button {
   padding: 12px;
   margin-right: 14px;
   background: #ffffff;
@@ -27,16 +33,53 @@ header .header__div button {
   font-weight: 600;
   font-size: 14px;
 }
-header .header__div div {
+body header .header__div div {
   font-size: 13px;
 }
-header .header__images__div {
+body header .header__images__div {
   display: flex;
 }
-header .header__images__div img {
+body header .header__images__div img {
   height: 20px;
   width: 20px;
   margin-left: 20px;
+}
+body .Header__div__separator {
+  display: none;
+}
+@media (min-width: 1000px) {
+  body header {
+    position: absolute;
+    margin-left: 14%;
+    margin-right: 0;
+    z-index: 1000;
+    width: 70%;
+    top: 40px;
+  }
+  body header .header__nav {
+    display: block;
+  }
+  body header .header__nav ul {
+    margin-left: -50%;
+  }
+  body header .header__nav ul a {
+    margin-right: 20px;
+  }
+  body .header__burger__icon {
+    display: none;
+  }
+  body .Header__div__separator {
+    display: block;
+    background-color: black;
+    padding: 40px;
+    color: white;
+    padding-left: 0px;
+  }
+  body .Header__div__separator p {
+    margin-top: -30px;
+    margin-left: 14%;
+    color: white;
+  }
 }
 
 footer {

@@ -88,12 +88,13 @@
     margin-bottom: 50px;
     justify-content: space-around;
     align-items: flex-start;
+    gap: 20px;
 
     div {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      align-items: flex-start;
+      text-align: left;
 
       p {
         margin: 0;
@@ -130,6 +131,35 @@
         align-items: flex-start;
         justify-content: center;
         margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    margin-right: 4%;
+    .logo__div {
+      width: 30%;
+      margin-right: -110px;
+    }
+
+    .services {
+      margin-top: 70px;
+      text-align: left;
+    }
+
+    .info__div {
+      margin-left: -150px;
+      margin-top: 70px;
+      h4 {
+        margin-bottom: 20px;
+      }
+      div {
+        margin-bottom: 10px;
       }
     }
   }

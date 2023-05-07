@@ -3,6 +3,14 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 90px;
+
+  .slider__container3 {
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    margin-left: 40px;
+  }
+
   h6 {
     font-weight: 700;
     font-size: 14px;
@@ -135,5 +143,12 @@
       align-items: center;
       width: 100%;
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  .slider__container3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }

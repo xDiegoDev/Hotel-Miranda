@@ -18,3 +18,18 @@
     }
   }
 }
+
+@media (min-width: 1000px) {
+  .slider__container2.slick-initialized {
+    display: none;
+  }
+
+  .square__slider {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    .slider__container2 {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

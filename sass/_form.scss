@@ -29,3 +29,13 @@ form {
     margin-bottom: 36px;
   }
 }
+
+@media (min-width: 1000px) {
+  form {
+    display: flex;
+    padding-left: 7%;
+    padding-right: 7%;
+    justify-content: space-around;
+    margin-top: -50px;
+  }
+}

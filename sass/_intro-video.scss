@@ -39,12 +39,14 @@
     margin-right: 10px;
     color: #c2c2c2;
   }
-
-  video {
-    width: 80%;
-    max-width: 500px;
-    margin-top: 30px;
-    margin-left: 20px;
+  .video__container {
+    width: 100%;
+    video {
+      width: 60%;
+      margin-top: 40px;
+      margin-left: 10px;
+      max-width: 400px;
+    }
   }
 
   button {
@@ -57,5 +59,42 @@
     letter-spacing: 3px;
     margin-bottom: 36px;
     margin-bottom: 55px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+
+    div {
+      width: 40%;
+      margin-right: 0;
+    }
+
+    button {
+      position: absolute;
+      bottom: 130px;
+    }
+
+    .video__container {
+      width: 30%;
+      background-color: #bdac8d;
+      margin-top: -20px;
+      margin-right: -20px;
+      margin-bottom: -20px;
+      video {
+        margin-top: 200px;
+        margin-bottom: 160px;
+        margin-left: -50%;
+        width: 1000px;
+        min-width: none;
+        height: 400px;
+      }
+    }
   }
 }

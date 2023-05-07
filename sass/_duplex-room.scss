@@ -38,3 +38,9 @@
     color: #bead8e;
   }
 }
+
+@media (min-width: 1000px) {
+  .duplex__room {
+    display: none;
+  }
+}

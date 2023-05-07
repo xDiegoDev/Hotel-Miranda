@@ -90,3 +90,15 @@
     }
   }
 }
+
+@media (min-width: 1000px) {
+  .button__div {
+    display: flex;
+    position: absolute;
+    top: 190px;
+    right: 300px;
+    button {
+      margin-right: 30px;
+    }
+  }
+}

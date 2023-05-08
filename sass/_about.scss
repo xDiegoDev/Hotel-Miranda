@@ -3,12 +3,13 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 100%;
   video {
     width: 60%;
-    max-width: 500px;
     min-width: 280px;
     align-self: center;
     margin-top: 30px;
+    max-width: 700px;
   }
   h3 {
     font-weight: 400;
@@ -28,33 +29,40 @@
   align-items: center;
   margin: 20px; /* add margin to the container */
   margin-top: 40px;
-
-  // .off__golden {
-  //   background: #bead8e;
-  //   color: white;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   width: 80%;
-  //   text-align: center;
-  //   padding: 10px;
-  // }
+  gap: 0;
 
   div {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* center the items vertically */
     padding: 10px;
-    width: 80%;
+    width: 30%;
     text-align: center;
     background-color: white;
+    transition: background-color 0.3s; /* add transition for smoother hover effect */
+    margin: auto;
+    margin-top: 20px;
 
     img {
       margin-bottom: 20px;
     }
+    .plane__png {
+      filter: invert(81%) sepia(51%) saturate(300%) hue-rotate(359deg)
+        brightness(90%) contrast(92%);
+    }
 
     h6 {
       margin: 0;
+    }
+
+    /* hover effect */
+    &:hover {
+      background-color: #c3b292;
+      color: white;
+
+      img {
+        filter: brightness(0) invert(1); /* invert color of the image */
+      }
     }
   }
 }
@@ -117,5 +125,69 @@
     letter-spacing: 3px;
     margin-bottom: 36px;
     margin-bottom: 175px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about__video {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    video {
+      width: 700px;
+    }
+    h3 {
+      font-size: 38px;
+      margin-top: 40px;
+    }
+  }
+
+  .offerings {
+    display: flex;
+    div {
+      width: 10%;
+    }
+  }
+
+  .restaurant {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    .square {
+      margin-left: -10%;
+      width: 1700px;
+    }
+    .restaurant__div {
+      margin-top: 140px;
+    }
+  }
+
+  .facilities__slider-black {
+    background-color: #222222;
+  }
+
+  .slider__container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    width: 80%;
+    margin-left: 6%;
+
+    img {
+      width: 400px;
+      margin-right: 50px;
+    }
+
+    div {
+      background-color: #292929;
+      width: 90%;
+    }
   }
 }

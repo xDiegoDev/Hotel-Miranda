@@ -11,7 +11,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <link rel="stylesheet" href="./sass/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -31,6 +31,14 @@
           </div>
         </div>
       </div>
+      <nav class="header__nav">
+        <ul>
+          <a>About us</a>
+          <a>Rooms</a>
+          <a>Offers</a>
+          <a>Contact</a>
+        </ul>
+      </nav>
       <div class="header__images__div">
         <img src="./images/User.png" />
         <img src="./images/Search.png" />
@@ -38,6 +46,9 @@
     </header>
 
     <main>
+      <div class="Header__div__separator">
+        <p>We make you feel comfortable</p>
+      </div>
       <div class="luxury__div">
         <h4>THE ULTIMATE LUXURY</h4>
         <h1>About Us</h1>
@@ -58,34 +69,21 @@
         </h3>
       </div>
 
-      <svg width="0" height="0">
-        <filter id="color-overlay">
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.745098 0 0 0 0 0.678431 0 0 0 0 0.556863 0 0 0 1 0"
-          />
-        </filter>
-      </svg>
-
       <div class="offerings">
         <div>
-          <img src="./images/breakfast.png" />
+          <img src="./images/icon 11.png" />
           <h6>BREAKFAST</h6>
         </div>
         <div>
-          <img
-            class="plane__png"
-            src="./images/plane.png"
-            filter="url(#color-overlay)"
-          />
-          <h6>AIRPORT PICKUP</h6>
+          <img src="./images/svg-gobbler - 2022-03-02T161851.313 1.png" />
+          <h6>BBQ PARTY</h6>
         </div>
         <div>
-          <img src="./images/guide.png" />
+          <img src="./images/svg-gobbler - 2022-03-02T161851.313 1.png" />
           <h6>CITY GUIDE</h6>
         </div>
         <div>
-          <img src="./images/room.png" />
+          <img src="./images/svg-gobbler - 2022-03-02T162427.880 1.png" />
           <h6>LUXURY ROOM</h6>
         </div>
       </div>
@@ -94,21 +92,23 @@
         <div class="square">
           <img src="./images/square.png" />
         </div>
-        <h6>RESTAURANT</h6>
-        <h1>Get Restaurant Facilities & Many Other More</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip.
-        </p>
-        <button>TAKE A TOUR</button>
+        <div class="restaurant__div">
+          <h6>RESTAURANT</h6>
+          <h1>Get Restaurant Facilities & Many Other More</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip.
+          </p>
+          <button>TAKE A TOUR</button>
+        </div>
       </div>
 
       <div class="facilities__slider facilities__slider-black">
         <h6>FACILITIES</h6>
         <h1>Core Features</h1>
-        <div class="slider__container">
+        <div class="slider__container facilities__container-black">
           <div>
             <img src="./images/Group 3.png" />
             <h4>Have High Rating</h4>
@@ -165,7 +165,7 @@
           <div></div>
           <h6>COUNTER</h6>
           <h1>Some Fun Facts</h1>
-          <div>
+          <div class="counter__div">
             <div>
               <img src="./images/happy.png" />
               <div>
@@ -193,77 +193,79 @@
           </div>
         </div>
 
-        <div class="slider__container">
-          <divc class="wide__slider">
-            <img src="./images/wide.png" />
-          </divc>
-          <div class="wide__slider">
-            <img src="./images/wide.png" />
-          </div>
+        <div class="slider__container image__2">
+          <img src="./images/wide.png" />
+          <img src="./images/wide.png" />
         </div>
       </div>
 
       <div class="contact">
-        <div class="logo__name">
-          <button>H</button>
-          <h3>HOTEL<br /><span>MIRANDA</span></h3>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
-          eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-        </p>
-        <div class="social-media__logos">
-          <div><img src="./images/fb.png" /></div>
-          <div class="tw__div"><img src="./images/tw.png" /></div>
-          <div><img src="./images/be.png" /></div>
-          <div><img src="./images/linkedin.png" /></div>
-          <div><img src="./images/yt.png" /></div>
-        </div>
-        <h4>Services.</h4>
-        <div class="facilities__list">
-          <div>
-            <p>+ Resturent & Bar</p>
-            <p>+ Swimming Pool</p>
-            <p>+ Wellness & Spa</p>
-            <p>+ Restaurant</p>
-            <p>+ Conference Room</p>
-            <p>+ Coctail Party House</p>
+        <div class="logo__div">
+          <div class="logo__name">
+            <button>H</button>
+            <h3>HOTEL<br /><span>MIRANDA</span></h3>
           </div>
-          <div>
-            <p>+ Gaming Zone</p>
-            <p>+ Marrige Party</p>
-            <p>+ Party Planning</p>
-            <p>+ Tour Consultancy</p>
+          <p>
+            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+            eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+          </p>
+          <div class="social-media__logos">
+            <div><img src="./images/fb.png" /></div>
+            <div class="tw__div"><img src="./images/tw.png" /></div>
+            <div><img src="./images/be.png" /></div>
+            <div><img src="./images/linkedin.png" /></div>
+            <div><img src="./images/yt.png" /></div>
+          </div>
+        </div>
+        <div class="services">
+          <h4>Services.</h4>
+          <div class="facilities__list">
+            <div>
+              <p>+ Resturent & Bar</p>
+              <p>+ Swimming Pool</p>
+              <p>+ Wellness & Spa</p>
+              <p>+ Restaurant</p>
+              <p>+ Conference Room</p>
+              <p>+ Coctail Party House</p>
+            </div>
+            <div>
+              <p>+ Gaming Zone</p>
+              <p>+ Marrige Party</p>
+              <p>+ Party Planning</p>
+              <p>+ Tour Consultancy</p>
+            </div>
           </div>
         </div>
 
-        <h4>Contact Us.</h4>
-        <div class="contact__div">
-          <div>
-            <img src="./images/phone.png" />
+        <div class="info__div">
+          <h4>Contact Us.</h4>
+          <div class="contact__div">
             <div>
+              <img src="./images/phone.png" />
               <div>
-                <h6>Phone Number</h6>
-                <p>+987 876 765 76 577</p>
+                <div>
+                  <h6>Phone Number</h6>
+                  <p>+987 876 765 76 577</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <img src="./images/email.png" />
             <div>
+              <img src="./images/email.png" />
               <div>
-                <h6>Email</h6>
-                <p>+987 876 765 76 577</p>
+                <div>
+                  <h6>Email</h6>
+                  <p>+987 876 765 76 577</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <img src="./images/location.png" />
             <div>
+              <img src="./images/location.png" />
               <div>
-                <h6>Address</h6>
-                <p>+987 876 765 76 577</p>
+                <div>
+                  <h6>Address</h6>
+                  <p>+987 876 765 76 577</p>
+                </div>
               </div>
             </div>
           </div>
@@ -280,16 +282,56 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".slider__container").slick({
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 5000,
-          arrows: true,
-          dots: true,
-          prevArrow: $(".slider__prev") /* Use the custom prev button */,
-          nextArrow: $(".slider__next") /* Use the custom next button */,
+        function initializeSlickSlider() {
+          $(".slider__container").slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: true,
+            dots: true,
+            prevArrow: $(".slider__prev"),
+            nextArrow: $(".slider__next"),
+          });
+        }
+
+        function handleWindowResize() {
+          if ($(window).width() >= 1000) {
+            if ($(".slider__container").hasClass("slick-initialized")) {
+              $(".slider__container").slick("unslick");
+            }
+          } else {
+            if (!$(".slider__container").hasClass("slick-initialized")) {
+              initializeSlickSlider();
+            }
+          }
+        }
+
+        // Initialize the slick slider based on the window size
+        handleWindowResize();
+
+        // Attach the window resize event handler
+        $(window).resize(handleWindowResize);
+      });
+
+      $(document).ready(function () {
+        // Find the .offering-icon element
+        $(".offering-icon").each(function () {
+          // Load the SVG content into a variable
+          let svgElement = $(this);
+          let svgUrl = svgElement.attr("src");
+
+          // Fetch the SVG content
+          $.get(svgUrl, function (data) {
+            // Replace the img tag with the actual SVG content
+            let svg = $(data).find("svg");
+            svg.attr("class", svgElement.attr("class"));
+            svgElement.replaceWith(svg);
+
+            // Change the fill color of the SVG
+            $(svg).find("path").attr("fill", "#bead8e");
+          });
         });
       });
     </script>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./sass/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -21,6 +21,14 @@
           </div>
         </div>
       </div>
+      <nav class="header__nav">
+        <ul>
+          <a>About us</a>
+          <a>Rooms</a>
+          <a>Offers</a>
+          <a>Contact</a>
+        </ul>
+      </nav>
       <div class="header__images__div">
         <img src="./images/User.png" />
         <img src="./images/Search.png" />
@@ -38,34 +46,36 @@
         </div>
       </div>
 
-      <div class="details">
-        <div class="details__container">
-          <img src="./images/email.png" />
-          <div>
-            <h4>Hotel Address</h4>
-            <p>19/A, Cirikon City hall Tower New York, NYC</p>
+      <div class="details__wrapper">
+        <div class="details">
+          <div class="details__container">
+            <img src="./images/email.png" />
+            <div>
+              <h4>Hotel Address</h4>
+              <p>19/A, Cirikon City hall Tower New York, NYC</p>
+            </div>
+            <img class="details__number" src="./images/01n.png" />
           </div>
-          <img class="details__number" src="./images/01n.png" />
         </div>
-      </div>
-      <div class="details">
-        <div class="details__container">
-          <img src="./images/phone.png" />
-          <div>
-            <h4>Phone Number</h4>
-            <p>+ 97656 8675 7864 7 <br />+ 876 766 8675 765 6</p>
+        <div class="details">
+          <div class="details__container">
+            <img src="./images/phone.png" />
+            <div>
+              <h4>Phone Number</h4>
+              <p>+ 97656 8675 7864 7 <br />+ 876 766 8675 765 6</p>
+            </div>
+            <img class="details__number" src="./images/02.png" />
           </div>
-          <img class="details__number" src="./images/02.png" />
         </div>
-      </div>
-      <div class="details">
-        <div class="details__container">
-          <img src="./images/location.png" />
-          <div>
-            <h4>Hotel Address</h4>
-            <p>info@webmail.com <br />jobs.webmail@mail.com</p>
+        <div class="details">
+          <div class="details__container">
+            <img src="./images/location.png" />
+            <div>
+              <h4>Hotel Address</h4>
+              <p>info@webmail.com <br />jobs.webmail@mail.com</p>
+            </div>
+            <img class="details__number" src="./images/03.png" />
           </div>
-          <img class="details__number" src="./images/03.png" />
         </div>
       </div>
 
@@ -97,66 +107,72 @@
         <button>SEND</button>
       </form>
       <div class="contact">
-        <div class="logo__name">
-          <button>H</button>
-          <h3>HOTEL<br /><span>MIRANDA</span></h3>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
-          eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-        </p>
-        <div class="social-media__logos">
-          <div><img src="./images/fb.png" /></div>
-          <div class="tw__div"><img src="./images/tw.png" /></div>
-          <div><img src="./images/be.png" /></div>
-          <div><img src="./images/linkedin.png" /></div>
-          <div><img src="./images/yt.png" /></div>
-        </div>
-        <h4>Services.</h4>
-        <div class="facilities__list">
-          <div>
-            <p>+ Resturent & Bar</p>
-            <p>+ Swimming Pool</p>
-            <p>+ Wellness & Spa</p>
-            <p>+ Restaurant</p>
-            <p>+ Conference Room</p>
-            <p>+ Coctail Party House</p>
+        <div class="logo__div">
+          <div class="logo__name">
+            <button>H</button>
+            <h3>HOTEL<br /><span>MIRANDA</span></h3>
           </div>
-          <div>
-            <p>+ Gaming Zone</p>
-            <p>+ Marrige Party</p>
-            <p>+ Party Planning</p>
-            <p>+ Tour Consultancy</p>
+          <p>
+            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+            eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+          </p>
+          <div class="social-media__logos">
+            <div><img src="./images/fb.png" /></div>
+            <div class="tw__div"><img src="./images/tw.png" /></div>
+            <div><img src="./images/be.png" /></div>
+            <div><img src="./images/linkedin.png" /></div>
+            <div><img src="./images/yt.png" /></div>
+          </div>
+        </div>
+        <div class="services">
+          <h4>Services.</h4>
+          <div class="facilities__list">
+            <div>
+              <p>+ Resturent & Bar</p>
+              <p>+ Swimming Pool</p>
+              <p>+ Wellness & Spa</p>
+              <p>+ Restaurant</p>
+              <p>+ Conference Room</p>
+              <p>+ Coctail Party House</p>
+            </div>
+            <div>
+              <p>+ Gaming Zone</p>
+              <p>+ Marrige Party</p>
+              <p>+ Party Planning</p>
+              <p>+ Tour Consultancy</p>
+            </div>
           </div>
         </div>
 
-        <h4>Contact Us.</h4>
-        <div class="contact__div">
-          <div>
-            <img src="./images/phone.png" />
+        <div class="info__div">
+          <h4>Contact Us.</h4>
+          <div class="contact__div">
             <div>
+              <img src="./images/phone.png" />
               <div>
-                <h6>Phone Number</h6>
-                <p>+987 876 765 76 577</p>
+                <div>
+                  <h6>Phone Number</h6>
+                  <p>+987 876 765 76 577</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <img src="./images/email.png" />
             <div>
+              <img src="./images/email.png" />
               <div>
-                <h6>Email</h6>
-                <p>+987 876 765 76 577</p>
+                <div>
+                  <h6>Email</h6>
+                  <p>+987 876 765 76 577</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <img src="./images/location.png" />
             <div>
+              <img src="./images/location.png" />
               <div>
-                <h6>Address</h6>
-                <p>+987 876 765 76 577</p>
+                <div>
+                  <h6>Address</h6>
+                  <p>+987 876 765 76 577</p>
+                </div>
               </div>
             </div>
           </div>

@@ -1,24 +1,61 @@
-.rooms__page-booking {
-  p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    color: #777777;
-  }
+.rooms__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  .rooms__pagination {
+    .rooms {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .rooms_page-booking {
+      text-align: center;
+      width: 100%;
+      margin: auto;
+      h3 {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 36px;
+      }
 
-  h4 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 17px;
-  }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 20px;
+        margin-bottom: 0px;
+      }
 
-  span {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 17px;
-    color: #bdbdbd;
-    margin-left: 20px;
+      h4 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 43px;
+        color: #bead8e;
+        font-size: 20px;
+      }
+      span {
+        font-size: 20px;
+        color: gray;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .rooms__container {
+    margin-top: -1300px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    margin-left: 0;
+    .rooms__pagination {
+      width: 100%;
+      .rooms_page-booking {
+        width: 100%;
+      }
+    }
   }
 }

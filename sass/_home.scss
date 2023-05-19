@@ -559,10 +559,17 @@
   }
 }
 
-@media (min-width: 1000) {
+@media (min-width: 1000px) {
   .facilities__slider {
     margin: auto;
     margin-left: 40px;
+
+    .slider__container3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px; // adjust as necessary
+    }
   }
 }
 
@@ -747,5 +754,9 @@
     width: 80%;
     margin: auto;
     margin-bottom: 100px;
+    p {
+      margin: auto;
+      width: 100%;
+    }
   }
 }

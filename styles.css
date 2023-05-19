@@ -594,10 +594,16 @@ body .Header__div__separator {
   color: #777777;
 }
 
-@media (min-width: 1000) {
+@media (min-width: 1000px) {
   .facilities__slider {
     margin: auto;
     margin-left: 40px;
+  }
+  .facilities__slider .slider__container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 .facilities__slider-black {
@@ -764,6 +770,10 @@ body .Header__div__separator {
     width: 80%;
     margin: auto;
     margin-bottom: 100px;
+  }
+  .stats p {
+    margin: auto;
+    width: 100%;
   }
 }
 footer {
@@ -1814,6 +1824,11 @@ p {
   width: 60%;
   margin: auto;
   margin-bottom: 50px;
+  margin: auto;
+  color: white;
+  background-color: #bead8e;
+  border: none;
+  padding: 20px 1px;
 }
 .details__form div {
   padding: 10px 60px 10px 20px;
@@ -1827,6 +1842,7 @@ p {
   border: none;
   margin: 0;
   margin-left: 30px;
+  background-color: #e5e5e5;
 }
 .details__form div .pen {
   height: 15px;

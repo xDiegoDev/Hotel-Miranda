@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   video {
     width: 60%;
     min-width: 280px;
@@ -13,7 +14,7 @@
   }
   h3 {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 34px;
     line-height: 40px;
     text-align: center;
     letter-spacing: -1.16px;
@@ -27,16 +28,13 @@
   grid-template-columns: 40% 40%;
   justify-content: center;
   align-items: center;
-  margin: 20px; /* add margin to the container */
-  margin-top: 40px;
-  gap: 0;
+  margin: auto;
 
   div {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* center the items vertically */
-    padding: 10px;
-    width: 30%;
+    width: 100px;
     text-align: center;
     background-color: white;
     transition: background-color 0.3s; /* add transition for smoother hover effect */
@@ -53,6 +51,7 @@
 
     h6 {
       margin: 0;
+      text-align: center;
     }
 
     /* hover effect */
@@ -78,14 +77,13 @@
     margin-bottom: 30px;
     img {
       margin: 20px auto;
-      width: 50%;
-      max-width: 400px;
+      width: 280px;
     }
   }
 
   h6 {
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: left;
     font-weight: 700;
     font-size: 14px;
@@ -97,9 +95,9 @@
 
   h1 {
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 49px;
     letter-spacing: -1.05px;
     color: #222222;
@@ -116,7 +114,7 @@
   }
 
   button {
-    margin-top: 46.8px;
+    margin-top: 26.8px;
     margin-left: 20px;
     color: white;
     background: #bead8e;
@@ -124,70 +122,101 @@
     padding: 21px 56px;
     letter-spacing: 3px;
     margin-bottom: 36px;
-    margin-bottom: 175px;
+    margin-bottom: 75px;
   }
 }
 
 @media (min-width: 1000px) {
   .about__video {
-    width: 100%;
+    width: 74%;
     max-width: 1000px;
     margin: auto;
     video {
       width: 700px;
     }
     h3 {
-      font-size: 38px;
+      font-size: 44px;
       margin-top: 40px;
     }
   }
 
   .offerings {
     display: flex;
+    margin-top: 50px;
     div {
-      width: 10%;
+      width: 100px;
     }
   }
 
   .restaurant {
     display: flex;
     margin-top: 50px;
-    align-items: center;
+    align-items: flex-start;
     box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
     margin: auto;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 80px;
+    padding: 0;
     .square {
       margin-left: -10%;
       width: 1700px;
+      img {
+        width: 330px;
+      }
     }
     .restaurant__div {
-      margin-top: 140px;
+      margin-left: -120px;
+      margin-top: 22px;
     }
   }
 
   .facilities__slider-black {
     background-color: #222222;
   }
+}
 
-  .slider__container {
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 50px;
+.counter__prev {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  // .slider__container {
+  //   display: flex;
+  //   justify-content: center;
+  //   width: 100%;
+  //   align-items: center;
+
+  //   .wide__slider {
+  //     display: flex;
+  //     margin: auto;
+  //     justify-content: center;
+  //     align-items: center;
+  //     width: 100%;
+  //   }
+  // }
+}
+
+@media (min-width: 1000px) {
+  .counter__prev {
     width: 80%;
-    margin-left: 6%;
+    margin: auto;
+    .counter {
+      text-align: left;
+      margin-left: 10%;
+      h1 {
+        font-size: 50px;
+      }
+      .counter__div {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        margin-left: -9%;
 
-    img {
-      width: 400px;
-      margin-right: 50px;
-    }
-
-    div {
-      background-color: #292929;
-      width: 90%;
+        div {
+          width: 50%;
+        }
+      }
     }
   }
 }

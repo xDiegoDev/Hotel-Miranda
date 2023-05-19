@@ -49,7 +49,7 @@
       <div class="Header__div__separator">
         <p>We make you feel comfortable</p>
       </div>
-      <div class="luxury__div">
+      <div class="luxury__div luxury__rest">
         <h4>THE ULTIMATE LUXURY</h4>
         <h1>About Us</h1>
         <div class="home__about">
@@ -105,10 +105,10 @@
         </div>
       </div>
 
-      <div class="facilities__slider facilities__slider-black">
+      <div class="black__fac">
         <h6>FACILITIES</h6>
         <h1>Core Features</h1>
-        <div class="slider__container facilities__container-black">
+        <div class="black__container">
           <div>
             <img src="./images/Group 3.png" />
             <h4>Have High Rating</h4>
@@ -192,11 +192,10 @@
             </div>
           </div>
         </div>
-
-        <div class="slider__container image__2">
+        <!-- <div class="slider__container image__2">
           <img src="./images/wide.png" />
           <img src="./images/wide.png" />
-        </div>
+        </div> -->
       </div>
 
       <div class="contact">
@@ -283,26 +282,18 @@
     <script>
       $(document).ready(function () {
         function initializeSlickSlider() {
-          $(".slider__container").slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            arrows: true,
-            dots: true,
-            prevArrow: $(".slider__prev"),
-            nextArrow: $(".slider__next"),
+          $(".black__container").slick({
+            // The rest of your slick options
           });
         }
 
         function handleWindowResize() {
           if ($(window).width() >= 1000) {
-            if ($(".slider__container").hasClass("slick-initialized")) {
-              $(".slider__container").slick("unslick");
+            if ($(".black__container").hasClass("slick-initialized")) {
+              $(".black__container").slick("unslick");
             }
           } else {
-            if (!$(".slider__container").hasClass("slick-initialized")) {
+            if (!$(".black__container").hasClass("slick-initialized")) {
               initializeSlickSlider();
             }
           }
@@ -313,26 +304,6 @@
 
         // Attach the window resize event handler
         $(window).resize(handleWindowResize);
-      });
-
-      $(document).ready(function () {
-        // Find the .offering-icon element
-        $(".offering-icon").each(function () {
-          // Load the SVG content into a variable
-          let svgElement = $(this);
-          let svgUrl = svgElement.attr("src");
-
-          // Fetch the SVG content
-          $.get(svgUrl, function (data) {
-            // Replace the img tag with the actual SVG content
-            let svg = $(data).find("svg");
-            svg.attr("class", svgElement.attr("class"));
-            svgElement.replaceWith(svg);
-
-            // Change the fill color of the SVG
-            $(svg).find("path").attr("fill", "#bead8e");
-          });
-        });
       });
     </script>
   </body>

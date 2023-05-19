@@ -1,23 +1,17 @@
 @use "header";
+@use "home";
 @use "footer";
-@use "form";
-@use "luxury";
-@use "facilities";
 @use "contact";
-@use "stats";
-@use "menu";
 @use "about";
 @use "rooms";
 @use "details";
 @use "blog";
-@use "aboutus";
 @use "discovery";
-@use "home-rooms";
-@use "duplex-room";
-@use "intro-video";
 @use "slider-container2";
 @use "pagination";
 @use "offers";
+@use "luxury";
+@use "blackfac";
 
 html,
 * {

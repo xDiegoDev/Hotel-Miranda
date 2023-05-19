@@ -41,6 +41,7 @@ body {
 
     .header__images__div {
       display: flex;
+      margin-left: -30px;
       img {
         height: 35px;
         width: 35px;
@@ -61,6 +62,7 @@ body {
       margin-right: 0;
       z-index: 1000;
       width: 70%;
+      max-width: 100%; /* Add this line */
       top: 40px;
       .header__nav {
         display: block;

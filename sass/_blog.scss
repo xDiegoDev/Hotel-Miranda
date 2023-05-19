@@ -1,5 +1,5 @@
 .details {
-  margin-top: 80px;
+  margin-top: 110px;
   margin-bottom: 230px;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,6 @@
     display: flex;
     position: relative;
     width: 90%;
-    max-width: 700px;
     img {
       margin-right: 30px;
       width: 38px;
@@ -45,11 +44,12 @@
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: -100px;
 
   .wide {
     width: 90%;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 900px;
   }
 }
 
@@ -63,10 +63,12 @@
   margin: auto; /* centers the div horizontally */
   margin-left: 17%;
   margin-bottom: 30px;
+  margin: auto;
 
   button {
     width: 60%;
-    margin-left: 10%;
+    margin: auto;
+    margin-bottom: 50px;
   }
 
   div {
@@ -100,10 +102,12 @@
     display: flex;
     gap: 50px;
     width: 90%;
-    margin: auto;
+
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
+    max-width: 1300px;
+    margin: auto;
     .details {
       width: 30%;
     }
@@ -120,6 +124,9 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
     margin: auto;
+    input {
+      background-color: #e6e6e6;
+    }
   }
 
   .details__form div:nth-last-child(2) {
@@ -135,5 +142,9 @@
     grid-column: 1 / -1;
     width: 20%;
     margin: auto;
+    color: white;
+    background-color: #bead8e;
+    padding: 20px 38px;
+    border: none;
   }
 }

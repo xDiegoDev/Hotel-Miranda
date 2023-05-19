@@ -10,6 +10,38 @@
   width: 100%;
   position: relative;
 
+  .slider__prev,
+  .slider__next {
+    position: absolute;
+    top: 33%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .slider__prev {
+    left: 14%;
+    background-color: white;
+    color: #bead8e;
+    border: 1px solid #bdac8d;
+  }
+  .slider__prev:hover {
+    background-color: #bdac8d;
+    color: white;
+  }
+  .slider__next:hover {
+    background-color: #bdac8d;
+    color: white;
+  }
+  .slider__next {
+    right: 14%;
+    border: 1px solid #bdac8d;
+    background-color: white;
+    color: #bead8e;
+  }
+
   .rooms_page-booking {
     margin-top: 0px;
     width: 100%;
@@ -38,7 +70,7 @@
   }
 
   .slider__container {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -49,13 +81,54 @@
     }
 
     div {
-      width: 100%;
+      width: 85%;
+      margin: auto;
       img {
         margin: auto;
         width: 100%;
-        max-width: 500px;
       }
     }
+  }
+}
+
+.minimal__duplex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  margin-top: -30px;
+  margin-bottom: 40px;
+
+  h3 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 43px;
+    color: #bead8e;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 43px;
+    color: #bebebe;
   }
 }
 
@@ -73,6 +146,9 @@
     }
     .wide__icons {
       position: relative;
+      img {
+        width: 100%;
+      }
       .rooms__icon-popular {
         position: absolute;
         display: flex;
@@ -80,8 +156,7 @@
         justify-content: center;
         background-color: white;
         width: 300px;
-        left: 45%;
-        left: 50%;
+        margin-left: 50%;
         transform: translateX(-50%);
         top: 96%;
         img {
@@ -89,6 +164,34 @@
           padding: 5px 10px;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .slider__container {
+    display: flex;
+    margin-left: -8%;
+    gap: 50px;
+  }
+
+  .slider__rooms {
+    flex: 1;
+    // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .slider__prev {
+    display: none;
+  }
+  .slider__next {
+    display: none;
+  }
+
+  .minimal__duplex {
+    border span {
+      font-size: 20px;
     }
   }
 }

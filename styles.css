@@ -2495,6 +2495,123 @@ p {
   margin-right: 18px;
 }
 
+.luxurybed__computer {
+  display: none;
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  .luxurybed__computer {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .luxurybed__computer img {
+    width: 100%;
+    height: 500px;
+  }
+  .luxurybed__computer .luxury__info__offers {
+    position: absolute;
+    width: 94%;
+    border-top: 5px solid #bead8e;
+    background-color: white;
+    top: 85%;
+    left: 3%;
+    z-index: 1000;
+  }
+  .luxurybed__computer .luxury__info__offers .price__div__luxury .prices__offers .old__price {
+    color: #bead8e;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: line-through;
+  }
+  .luxurybed__computer .luxury__info__offers .price__div__luxury .prices__offers .old__price span {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .luxurybed__computer .luxury__info__offers .price__div__luxury .prices__offers .discounted__price {
+    color: #de5777;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    margin-top: -30px;
+  }
+  .luxurybed__computer .luxury__info__offers .price__div__luxury .prices__offers .discounted__price span {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .luxurybed__computer .price__div__luxury {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    align-items: center;
+  }
+  .luxurybed__computer .amenities__offers__line {
+    width: 90%;
+    margin: auto;
+    height: 0.1px;
+    background-color: #777777;
+  }
+  .luxurybed__computer .paragraph__amenities {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+  }
+  .luxurybed__computer .paragraph__amenities .amenities__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(7, 1fr); /* 7 rows */
+    margin-right: -120px;
+    margin-left: 130px;
+    gap: 0;
+  }
+  .luxurybed__computer .paragraph__amenities .amenities__grid div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 6px;
+    margin-right: -50px;
+  }
+  .luxurybed__computer .paragraph__amenities .amenities__grid div p {
+    font-size: 12px;
+    margin-bottom: 0;
+    width: 300px;
+  }
+  .luxurybed__computer .paragraph__amenities .amenities__grid div img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-top: 18px;
+    margin-right: 18px;
+  }
+  .luxurybed__computer .paragraph__amenities .paragraph {
+    margin-right: -300px;
+    margin-bottom: 0;
+  }
+  .luxurybed__computer .paragraph__amenities .paragraph button {
+    margin-top: 30px;
+    color: white;
+    background-color: #bead8e;
+    padding: 20px 48px;
+    margin: auto;
+    margin-top: -70px;
+    margin-left: 6%;
+    border: none;
+    margin-bottom: 50px;
+  }
+  .luxurybed {
+    display: none;
+  }
+}
 html,
 * {
   box-sizing: border-box;

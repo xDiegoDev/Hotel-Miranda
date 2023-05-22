@@ -1,0 +1,132 @@
+.luxurybed {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: auto;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+
+  .bed__prices {
+    position: relative;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    img {
+      width: 100%;
+      min-width: 150px;
+    }
+    .old__price {
+      position: absolute;
+      color: #bead8e;
+      bottom: 25%;
+      right: -3%;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      text-decoration: line-through;
+    }
+    span {
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 12px;
+      text-decoration: none;
+    }
+  }
+  .discounted__price {
+    position: absolute;
+    color: #de5777;
+    bottom: 8%;
+    right: -3%;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    span {
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 12px;
+    }
+  }
+
+  h6 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.44px;
+    color: #222222;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    margin-left: 0px;
+  }
+
+  button {
+    margin-top: 30px;
+    color: white;
+    background-color: #bead8e;
+    padding: 20px 48px;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 10px;
+    border: none;
+  }
+
+  .amenities__offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 30px;
+    width: 90%;
+
+    .amenities__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      grid-template-rows: repeat(7, 1fr); /* 7 rows */
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-top: -20px;
+      margin-bottom: 30px;
+      margin-left: -30px;
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: -30px;
+        font-size: 6px;
+        p {
+          font-size: 12px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+          margin-top: 18px;
+          margin-right: 18px;
+        }
+      }
+    }
+  }
+}

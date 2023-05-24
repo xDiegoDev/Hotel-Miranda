@@ -256,8 +256,6 @@
 }
 
 .popular__offers__black {
-  display: flex;
-  flex-direction: column;
   background-color: #222222;
   justify-content: center;
   align-items: center;
@@ -267,9 +265,51 @@
   width: 100%;
   position: relative;
 
+  .slider__prev_black {
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    color: #bead8e;
+    top: 42%;
+    left: 3%;
+    border: none;
+  }
+  .slider__next_black {
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    color: #bead8e;
+    top: 42%;
+    right: 3%;
+    border: none;
+  }
+
+  .slider__next_black:hover {
+    background-color: #bdac8d;
+    color: white;
+  }
+  .slider__prev_black:hover {
+    background-color: #bdac8d;
+    color: white;
+  }
+
+  h6 {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  .slider__container__black-2 {
+    display: none;
+  }
+
   .slider__container__black {
     margin-bottom: 50px;
-    .slider__rooms {
+    justify-content: center;
+    align-items: center;
+    .slider__rooms__black {
+      margin-bottom: 50px;
       img {
         width: 90%;
         margin: auto;
@@ -282,9 +322,11 @@
           display: flex;
           flex-direction: row;
           position: absolute;
-          width: 300px;
+          width: 50%;
+          max-width: 420px;
           bottom: -4%;
-          left: 19.4%;
+          left: 25.4%;
+          z-index: 2000;
           img {
             width: 30px;
           }
@@ -350,5 +392,118 @@
     letter-spacing: -0.8px;
     color: #ffffff;
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .popular__offers__black {
+    margin-top: 600px;
+    .slider__prev_black {
+      display: none;
+    }
+    .slider__next_black {
+      display: none;
+    }
+    .slider__container__black {
+      display: none;
+    }
+    .slider__container__black-2 {
+      .slider__prev_black {
+        display: none;
+      }
+      .slider__next_black {
+        display: none;
+      }
+      button {
+        display: none;
+      }
+      overflow-x: hidden;
+      margin-bottom: 50px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: auto;
+      .slider__rooms__black {
+        margin-bottom: 50px;
+        justify-content: center;
+        overflow-x: hidden;
+        img {
+          width: 90%;
+          max-width: 500px;
+          overflow-x: hidden;
+        }
+        .wide__icons__black {
+          position: relative;
+          .rooms__icon__popular {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            width: 55%;
+            max-width: 350px;
+            bottom: -4%;
+            left: 18.4%;
+            justify-content: space-between;
+            img {
+              width: 30px;
+            }
+          }
+        }
+        .duplex__room__offers {
+          width: 90%;
+          padding-top: 0px;
+          padding-bottom: 30px;
+          padding-right: 20px;
+          padding-left: 20px;
+          background-color: white;
+          margin-bottom: 30px;
+          max-width: 500px;
+          text-align: center;
+          margin-top: -10px;
+          h3 {
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 36px;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            margin: 20px;
+          }
+          h4 {
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 43px;
+            color: #bead8e;
+          }
+
+          span {
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 43px;
+            color: #bebebe;
+          }
+          div {
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .popular__offers__black {
+    .slider__container__black {
+      .slider__rooms__black {
+        .wide__icons__black {
+          .rooms__icon__popular {
+            left: 28%;
+          }
+        }
+      }
+    }
   }
 }

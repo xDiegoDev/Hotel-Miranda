@@ -2,16 +2,23 @@
 <html>
   <head>
     <link rel="stylesheet" href="./styles.css" />
+    <!-- Add slick CSS -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+
+    <!-- Add the slick-theme.css if you want default styling -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+
+    <!-- Add jQuery and slick JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -24,7 +31,7 @@
       </div>
       <div>
         <div class="header__div">
-          <button>H</button>
+          <button><a href="/home.html">H</a></button>
           <div>
             <span>HOTEL</span>
             <br />
@@ -32,6 +39,14 @@
           </div>
         </div>
       </div>
+      <nav class="header__nav">
+        <ul>
+          <a href="/about.html">About us</a>
+          <a href="/room.html">Rooms</a>
+          <a href="offers.html">Offers</a>
+          <a href="/contact.html">Contact</a>
+        </ul>
+      </nav>
       <div class="header__images__div">
         <img src="./images/User.png" />
         <img src="./images/Search.png" />
@@ -53,7 +68,9 @@
 
       <div class="luxurybed">
         <div class="bed__prices">
-          <img src="./images/wide.png" />
+          <img
+            src="https://images.unsplash.com/photo-1565623833408-d77e39b88af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+          />
           <p class="old__price">$500<span>/Night</span></p>
           <p class="discounted__price">$345<span>/Night</span></p>
         </div>
@@ -130,11 +147,13 @@
           </div>
         </div>
 
-        <button>BOOK NOW</button>
+        <button><a href="/room-details.html">BOOK NOW</a></button>
       </div>
 
       <div class="luxurybed__computer">
-        <img src="./images/wide.png" />
+        <img
+          src="https://images.unsplash.com/photo-1565623833408-d77e39b88af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+        />
         <div class="luxury__info__offers">
           <div class="price__div__luxury">
             <div>
@@ -157,7 +176,7 @@
                 in reprehend erit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur.
               </p>
-              <button>BOOK NOW</button>
+              <button><a href="/room-details.html">BOOK NOW</a></button>
             </div>
             <div class="amenities__grid">
               <div>
@@ -211,9 +230,11 @@
         <h1>Popular Rooms</h1>
 
         <div class="slider__container__black">
-          <div class="slider__rooms">
+          <div class="slider__rooms__black">
             <div class="wide__icons__black">
-              <img src="./images/wide.png" />
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60s"
+              />
               <div class="rooms__icon__popular">
                 <img src="./images/bed.png" />
                 <img src="./images/wifi.png" />
@@ -235,9 +256,11 @@
               <h4>$345/Night <span>Booking Now</span></h4>
             </div>
           </div>
-          <div class="slider__rooms">
+          <div class="slider__rooms__black">
             <div class="wide__icons__black">
-              <img src="./images/wide.png" />
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60s"
+              />
               <div class="rooms__icon__popular">
                 <img src="./images/bed.png" />
                 <img src="./images/wifi.png" />
@@ -260,8 +283,89 @@
             </div>
           </div>
         </div>
-        <button class="slider__prev_black">Prev</button>
-        <button class="slider__next_black">Next</button>
+        <!-- <button class="slider__prev_black">Prev</button>
+        <button class="slider__next_black">Next</button> -->
+
+        <div class="slider__container__black-2">
+          <div class="slider__rooms__black">
+            <div class="wide__icons__black">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60s"
+              />
+              <div class="rooms__icon__popular">
+                <img src="./images/bed.png" />
+                <img src="./images/wifi.png" />
+                <img src="./images/car.png" />
+                <img src="./images/ice.png" />
+                <img src="./images/dumbell.png" />
+                <img src="./images/cigarette.png" />
+                <img src="./images/drink.png" />
+              </div>
+            </div>
+            <div class="duplex__room__offers">
+              <div>
+                <h3>Minimal Duplex Room</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <h4>$345/Night <span>Booking Now</span></h4>
+            </div>
+          </div>
+          <div class="slider__rooms__black">
+            <div class="wide__icons__black">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60s"
+              />
+              <div class="rooms__icon__popular">
+                <img src="./images/bed.png" />
+                <img src="./images/wifi.png" />
+                <img src="./images/car.png" />
+                <img src="./images/ice.png" />
+                <img src="./images/dumbell.png" />
+                <img src="./images/cigarette.png" />
+                <img src="./images/drink.png" />
+              </div>
+            </div>
+            <div class="duplex__room__offers">
+              <div>
+                <h3>Minimal Duplex Room</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <h4>$345/Night <span>Booking Now</span></h4>
+            </div>
+          </div>
+          <div class="slider__rooms__black">
+            <div class="wide__icons__black">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60s"
+              />
+              <div class="rooms__icon__popular">
+                <img src="./images/bed.png" />
+                <img src="./images/wifi.png" />
+                <img src="./images/car.png" />
+                <img src="./images/ice.png" />
+                <img src="./images/dumbell.png" />
+                <img src="./images/cigarette.png" />
+                <img src="./images/drink.png" />
+              </div>
+            </div>
+            <div class="duplex__room__offers">
+              <div>
+                <h3>Minimal Duplex Room</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <h4>$345/Night <span>Booking Now</span></h4>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="contact">
@@ -343,8 +447,6 @@
       <h5>Terms of use | Privacy Environmental Policy</h5>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".slider__container__black").slick({
@@ -353,7 +455,8 @@
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 5000,
-          arrows: true,
+          prevArrow: $(".slider__prev_black"),
+          nextArrow: $(".slider__next_black"),
         });
       });
     </script>

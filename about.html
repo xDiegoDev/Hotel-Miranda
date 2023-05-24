@@ -23,7 +23,7 @@
       </div>
       <div>
         <div class="header__div">
-          <button>H</button>
+          <button><a href="/home.html">H</a></button>
           <div>
             <span>HOTEL</span>
             <br />
@@ -33,10 +33,10 @@
       </div>
       <nav class="header__nav">
         <ul>
-          <a>About us</a>
-          <a>Rooms</a>
-          <a>Offers</a>
-          <a>Contact</a>
+          <a href="/about.html">About us</a>
+          <a href="/room.html">Rooms</a>
+          <a href="offers.html">Offers</a>
+          <a href="/contact.html">Contact</a>
         </ul>
       </nav>
       <div class="header__images__div">
@@ -59,9 +59,12 @@
         </div>
       </div>
 
-      <div class="about__video">
+      <div class="about__video" id="myVideo">
         <video controls>
-          <source type="video/mp4" src="https://youtu.be/cn4TmsRbdXQ" />
+          <source
+            type="video/mp4"
+            src="https://r2---sn-5hnekn7s.googlevideo.com/videoplayback?expire=1684948014&ei=zu9tZL_EGOqM_9EP1fai6A4&ip=142.93.198.203&id=o-ADpjpUftJR9jp868p5hX0JDnKiMs8XFtOZaVuEx3Wclu&itag=22&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=252.052&lmt=1673598264372805&fexp=24007246,24350018,24362688,24363392,51000011&beids=24350018&c=ANDROID_EMBEDDED_PLAYER&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhAPXd2KMMV6aMqt5fnTZ541HKc5jaXMJOMBeOl9Uz9CZfAiEA-1EfcN9HbhYdB9w6dYhg9g9YNizjOBx7lE9_5FzG_wk%3D&cm2rm=sn-h5nhv8pa-8aje7s,sn-h5qzd7z&req_id=e61f2c053d67a3ee&redirect_counter=2&cms_redirect=yes&cmsv=e&mh=oa&mip=139.47.20.142&mm=34&mn=sn-5hnekn7s&ms=ltu&mt=1684926054&mv=m&mvi=2&pl=21&lsparams=mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgTbiSggXcOQ-9wU9WvKu4cA-MB6JsfVxTiI5yhqNXjEICIQC1gqKkw6RHrUn_8vR6yaZBzrvcH3KSFf3C6JB6l2ERPQ%3D%3D"
+          />
         </video>
         <h3>
           Hello. Our hotel has been present for over 20 years. We make the best
@@ -90,7 +93,9 @@
 
       <div class="restaurant">
         <div class="square">
-          <img src="./images/square.png" />
+          <img
+            src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+          />
         </div>
         <div class="restaurant__div">
           <h6>RESTAURANT</h6>
@@ -276,6 +281,23 @@
       <h5>Copyright By@Example - 2020</h5>
       <h5>Terms of use | Privacy Environmental Policy</h5>
     </footer>
+    <script>
+      var myVideo = document.getElementById("myVideo");
+
+      myVideo.addEventListener(
+        "loadedmetadata",
+        function () {
+          this.currentTime = 25;
+        },
+        false
+      );
+
+      myVideo.ontimeupdate = function () {
+        if (this.currentTime >= 75) {
+          this.pause();
+        }
+      };
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

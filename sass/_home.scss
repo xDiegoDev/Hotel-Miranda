@@ -475,18 +475,20 @@
     }
 
     .video__container {
-      width: 30%;
+      width: 40%;
       background-color: #bdac8d;
       margin-top: -20px;
       margin-right: -20px;
       margin-bottom: -20px;
+
       video {
         margin-top: 200px;
         margin-bottom: 160px;
-        margin-left: -50%;
-        width: 1000px;
+        margin-left: -30%;
         min-width: none;
-        height: 400px;
+        source {
+          height: 1500px;
+        }
       }
     }
   }

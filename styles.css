@@ -518,7 +518,7 @@ body .Header__div__separator {
     bottom: 130px;
   }
   .video__div .video__container {
-    width: 30%;
+    width: 40%;
     background-color: #bdac8d;
     margin-top: -20px;
     margin-right: -20px;
@@ -527,10 +527,11 @@ body .Header__div__separator {
   .video__div .video__container video {
     margin-top: 200px;
     margin-bottom: 160px;
-    margin-left: -50%;
-    width: 1000px;
+    margin-left: -30%;
     min-width: none;
-    height: 400px;
+  }
+  .video__div .video__container video source {
+    height: 1500px;
   }
 }
 .facilities__slider {
@@ -1420,7 +1421,7 @@ p {
 }
 .person .person__images .person__images__tick {
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 0px;
 }
 .person h3 {
@@ -2107,7 +2108,7 @@ p {
   }
 }
 .luxury__div {
-  background: #333;
+  background-image: url("https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
   color: #ffffff;
   position: relative;
   width: 100%;
@@ -2194,6 +2195,7 @@ p {
     position: relative;
     margin-bottom: 250px;
     padding-bottom: 150px;
+    background-image: url("https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
   }
   .luxury__1000__div h1 {
     font-size: 80px;
@@ -2251,6 +2253,7 @@ p {
     padding-left: 13%;
     padding-top: 50px;
     position: relative;
+    background-image: url("https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
   }
   .luxury__rest h1 {
     font-size: 80px;
@@ -2613,8 +2616,6 @@ p {
   }
 }
 .popular__offers__black {
-  display: flex;
-  flex-direction: column;
   background-color: #222222;
   justify-content: center;
   align-items: center;
@@ -2624,30 +2625,72 @@ p {
   width: 100%;
   position: relative;
 }
+.popular__offers__black .slider__prev_black {
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  color: #bead8e;
+  top: 42%;
+  left: 3%;
+  border: none;
+}
+.popular__offers__black .slider__next_black {
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  color: #bead8e;
+  top: 42%;
+  right: 3%;
+  border: none;
+}
+.popular__offers__black .slider__next_black:hover {
+  background-color: #bdac8d;
+  color: white;
+}
+.popular__offers__black .slider__prev_black:hover {
+  background-color: #bdac8d;
+  color: white;
+}
+.popular__offers__black h6 {
+  text-align: center;
+}
+.popular__offers__black h1 {
+  text-align: center;
+}
+.popular__offers__black .slider__container__black-2 {
+  display: none;
+}
 .popular__offers__black .slider__container__black {
   margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
 }
-.popular__offers__black .slider__container__black .slider__rooms img {
+.popular__offers__black .slider__container__black .slider__rooms__black {
+  margin-bottom: 50px;
+}
+.popular__offers__black .slider__container__black .slider__rooms__black img {
   width: 90%;
   margin: auto;
   max-width: 500px;
 }
-.popular__offers__black .slider__container__black .slider__rooms .wide__icons__black {
+.popular__offers__black .slider__container__black .slider__rooms__black .wide__icons__black {
   position: relative;
 }
-.popular__offers__black .slider__container__black .slider__rooms .wide__icons__black .rooms__icon__popular {
+.popular__offers__black .slider__container__black .slider__rooms__black .wide__icons__black .rooms__icon__popular {
   background-color: white;
   display: flex;
   flex-direction: row;
   position: absolute;
-  width: 300px;
+  width: 50%;
+  max-width: 420px;
   bottom: -4%;
-  left: 19.4%;
+  left: 25.4%;
+  z-index: 2000;
 }
-.popular__offers__black .slider__container__black .slider__rooms .wide__icons__black .rooms__icon__popular img {
+.popular__offers__black .slider__container__black .slider__rooms__black .wide__icons__black .rooms__icon__popular img {
   width: 30px;
 }
-.popular__offers__black .slider__container__black .slider__rooms .duplex__room__offers {
+.popular__offers__black .slider__container__black .slider__rooms__black .duplex__room__offers {
   width: 90%;
   margin: auto;
   padding-top: 0px;
@@ -2659,30 +2702,30 @@ p {
   max-width: 500px;
   text-align: center;
 }
-.popular__offers__black .slider__container__black .slider__rooms .duplex__room__offers h3 {
+.popular__offers__black .slider__container__black .slider__rooms__black .duplex__room__offers h3 {
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
 }
-.popular__offers__black .slider__container__black .slider__rooms .duplex__room__offers p {
+.popular__offers__black .slider__container__black .slider__rooms__black .duplex__room__offers p {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   margin: 20px;
 }
-.popular__offers__black .slider__container__black .slider__rooms .duplex__room__offers h4 {
+.popular__offers__black .slider__container__black .slider__rooms__black .duplex__room__offers h4 {
   font-weight: 700;
   font-size: 19px;
   line-height: 43px;
   color: #bead8e;
 }
-.popular__offers__black .slider__container__black .slider__rooms .duplex__room__offers span {
+.popular__offers__black .slider__container__black .slider__rooms__black .duplex__room__offers span {
   font-weight: 700;
   font-size: 19px;
   line-height: 43px;
   color: #bebebe;
 }
-.popular__offers__black .slider__container__black .slider__rooms .duplex__room__offers div {
+.popular__offers__black .slider__container__black .slider__rooms__black .duplex__room__offers div {
   padding-top: 30px;
 }
 .popular__offers__black h6 {
@@ -2703,6 +2746,107 @@ p {
   margin-bottom: 40px;
 }
 
+@media (min-width: 1000px) {
+  .popular__offers__black {
+    margin-top: 600px;
+  }
+  .popular__offers__black .slider__prev_black {
+    display: none;
+  }
+  .popular__offers__black .slider__next_black {
+    display: none;
+  }
+  .popular__offers__black .slider__container__black {
+    display: none;
+  }
+  .popular__offers__black .slider__container__black-2 {
+    overflow-x: hidden;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__prev_black {
+    display: none;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__next_black {
+    display: none;
+  }
+  .popular__offers__black .slider__container__black-2 button {
+    display: none;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black {
+    margin-bottom: 50px;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black img {
+    width: 90%;
+    max-width: 500px;
+    overflow-x: hidden;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black .wide__icons__black {
+    position: relative;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black .wide__icons__black .rooms__icon__popular {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 55%;
+    max-width: 350px;
+    bottom: -4%;
+    left: 18.4%;
+    justify-content: space-between;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black .wide__icons__black .rooms__icon__popular img {
+    width: 30px;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black .duplex__room__offers {
+    width: 90%;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    max-width: 500px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black .duplex__room__offers h3 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black .duplex__room__offers p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black .duplex__room__offers h4 {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 43px;
+    color: #bead8e;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black .duplex__room__offers span {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 43px;
+    color: #bebebe;
+  }
+  .popular__offers__black .slider__container__black-2 .slider__rooms__black .duplex__room__offers div {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 850px) {
+  .popular__offers__black .slider__container__black .slider__rooms__black .wide__icons__black .rooms__icon__popular {
+    left: 28%;
+  }
+}
 html,
 * {
   box-sizing: border-box;
